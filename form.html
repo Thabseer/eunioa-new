@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body class="bg-white h-[100vh] ">
+    <div class="form" id="form">
+        <form id="contactform"  action="from.php" method="POST" class="w-full max-w-sm mx-auto bg-white p-8 rounded-md shadow-md">
+            <h1 class="text-2xl font-bold mb-6 text-center">BOOKING</h1>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">NAME</label>
+                <input type="text" id="name" name="text" placeholder="name" required  class="w-full px-3 bg-white py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+            </div>
+
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">PHONE NO</label>
+                <input type="number" id="phone" name="phone" placeholder="phone" required class="w-full px-3 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+            </div>
+
+            <div class="mb-4">
+                <label for="place" class="block text-gray-700 text-sm font-bold mb-2">PLACE</label>
+                <input type="text" id="place" name="place" placeholder="place" required class="w-full px-3 py-2 border bg-white border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+            </div>
+
+            <div class="mb-4">
+                <label for="event" class="inline text-gray-700 text-sm font-bold mb-2">EVENTS</label>
+                <select id="evechoices" name="program" required class="w-full px-3 py-2 border bg-white border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+                    <option value="wedding" class="w-full px-3 py-2 border bg-white border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" >Wedding</option>
+                    <option value="birthdays" class="text-gray-700 block px-4 py-2 text-sm">Birthdays</option>
+                    <option value="concert" class="text-gray-700 block px-4 py-2 text-sm">Concert</option>
+                  </select>
+            </div>
+            <div class="mb-4">
+                <label for="event" class="inline text-gray-700 text-sm font-bold mb-2">PACKAGES</label>
+                <select id="evechoices" name="package" required class="w-full px-3 py-2 border bg-white border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
+                    <option value="regular" class="w-full px-3 py-2 border bg-white border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" >Regular</option>
+                    <option value="classic" class="text-gray-700 block px-4 py-2 text-sm">Classic</option>
+                    <option value="premium" class="text-gray-700 block px-4 py-2 text-sm">Premium</option>
+                  </select>
+            </div>
+            
+
+            
+
+           <div class="button ml-[120px]">
+            <input type="submit" name="save" value="Book" class="btn">
+        </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

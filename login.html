@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+<!-- partial:index.partial.html -->
+<div id="bg"> </div>
+
+<form action="login.php" method="post">
+  <div class="form-field">
+    <input name="email" type="email" placeholder="Email / Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" name="Password" placeholder="Password" required/>                         </div>
+  
+  <div class="form-field">
+    <button class=" btn-log" type="submit">Login</button>
+    
+ <div class="signmess">
+  <h1>if you don't have account </h1>
+  
+    <a href="signup.html">sign up</a>
+ </div>
+
+ 
+</form>
+
+
+      
+<!-- partial -->
+  
+</body>
+</html>
